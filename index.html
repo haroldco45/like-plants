@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Like Plants · Naturaleza que inspira · Caucasia</title>
+<meta name="description" content="Like Plants de Keiner Oquendo en Caucasia: materas personalizadas, cactus, plantas de interior y velas aromáticas. Decora, regala y llena de vida tus espacios. Pide por WhatsApp 323 288 8026.">
+<meta name="theme-color" content="#1f7a4d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Like Plants · Naturaleza que inspira">
+<meta property="og:description" content="Materas personalizadas, cactus, plantas de interior y velas aromáticas en Caucasia. Regalos de Navidad que llenan de vida. Pide por WhatsApp.">
+<meta property="og:image" content="https://like-plants.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://like-plants.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://like-plants.netlify.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600;800&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#1f7a4d;--verde2:#2fa36b;--menta:#e8f5e4;--rosa:#e9546b;--crema:#fcfaf0;--tinta:#1d2b22;--rojo:#c8102e;--oro:#d9a520}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--crema);color:var(--tinta);overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+/* barra */
+.top{position:sticky;top:0;z-index:50;background:rgba(252,250,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid #e3ecd9}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:10px}
+.logo{font-family:Fredoka;font-weight:700;font-size:22px;letter-spacing:.5px}
+.logo b{color:var(--rosa)}.logo span{color:var(--verde)}
+.top nav{display:flex;gap:6px;align-items:center}
+.btn{border:0;cursor:pointer;font:800 14px Nunito;padding:10px 16px;border-radius:999px;background:var(--verde);color:#fff;text-decoration:none;display:inline-block;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(31,122,77,.3)}
+.btn.rosa{background:var(--rosa)}.btn.claro{background:#fff;color:var(--verde);border:2px solid var(--verde)}
+.btn.chico{padding:7px 12px;font-size:13px}
+#lang{background:var(--menta);color:var(--verde)}
+#carBtn{position:relative}
+#carN{background:var(--rosa);color:#fff;border-radius:999px;padding:1px 7px;margin-left:6px;font-size:12px}
+/* aviso */
+.hoy{background:linear-gradient(90deg,var(--rojo),#8b0d22,var(--verde));color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;font-size:14px}
+.hoy div{display:inline-block;padding:9px 0;animation:corre 28s linear infinite}
+@keyframes corre{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* hero */
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;overflow:hidden;color:#fff}
+.hero .bg{position:absolute;inset:-30px;background:url(regalos-like-plants.jpg) center/cover;animation:zoom 18s ease-in-out infinite alternate;filter:saturate(1.15)}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.12) translate(-1%,1%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,50,30,.35),rgba(15,50,30,.82))}
+.hero .in{position:relative;z-index:2;text-align:center;padding:60px 18px}
+.chip{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:999px;font-weight:800;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.hero h1{font-family:Fredoka;font-size:clamp(52px,12vw,120px);line-height:.9;margin:18px 0 6px;text-shadow:0 6px 30px rgba(0,0,0,.35)}
+.hero h1 b{color:#ff8a9b}.hero h1 span{color:#9ff0c0}
+.hero .lema{font-family:'Dancing Script';font-size:clamp(26px,5vw,40px)}
+.hero p.sub{max-width:560px;margin:14px auto 26px;font-size:18px;opacity:.95}
+.hero .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.tarjeta{width:min(420px,86vw);margin:34px auto 0;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.45);transform:rotate(-3deg);animation:flota 5s ease-in-out infinite}
+@keyframes flota{50%{transform:rotate(2deg) translateY(-10px)}}
+/* secciones */
+section{padding:70px 0}
+.tit{font-family:Fredoka;font-size:clamp(30px,6vw,46px);color:var(--verde);line-height:1.05}
+.tit b{color:var(--rosa)}
+.ant{font-weight:800;color:var(--rosa);letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:8px}
+.lead{font-size:17px;max-width:640px;margin-top:10px;color:#3c4b40}
+/* hoy dinámico */
+#hoySec{background:var(--menta)}
+.hoyGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+.hoyCard{background:#fff;border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(31,122,77,.1);border-left:6px solid var(--verde2)}
+.hoyCard.r{border-color:var(--rosa)}.hoyCard.o{border-color:var(--oro)}
+.hoyCard small{font-weight:800;color:#6b7d70;text-transform:uppercase;letter-spacing:1px;font-size:11px}
+.hoyCard h3{font-family:Fredoka;font-size:24px;margin:6px 0}
+.cuenta{display:flex;gap:8px;margin-top:8px}
+.cuenta div{background:var(--verde);color:#fff;border-radius:12px;padding:8px 10px;text-align:center;min-width:56px}
+.cuenta b{display:block;font:700 24px Fredoka}.cuenta span{font-size:11px}
+/* categorías */
+.cats{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 20px}
+.cat{border:2px solid var(--verde);background:#fff;color:var(--verde);font:800 14px Nunito;padding:9px 16px;border-radius:999px;cursor:pointer;transition:.2s}
+.cat.on{background:var(--verde);color:#fff}
+.prods{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.prod{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.07);display:flex;flex-direction:column;transition:transform .3s;animation:entra .5s both}
+.prod:hover{transform:translateY(-6px) rotate(-.5deg)}
+@keyframes entra{from{opacity:0;transform:translateY(20px)}}
+.prod .ft{height:170px;background:var(--menta) center/cover;position:relative}
+.prod .ft .et{position:absolute;left:12px;top:12px;background:var(--rosa);color:#fff;font-weight:800;font-size:12px;padding:4px 10px;border-radius:999px}
+.prod .ft .fb{position:absolute;inset:0;display:grid;place-items:center;font:700 26px Fredoka;color:var(--verde);text-align:center;padding:10px;background:linear-gradient(135deg,#e8f5e4,#fde7ea)}
+.prod .tx{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.prod h3{font-family:Fredoka;font-size:21px}
+.prod p{font-size:14px;color:#4d5c51;flex:1}
+.prod .pr{font-weight:800;color:var(--verde)}
+/* personaliza */
+#perso{background:linear-gradient(135deg,var(--verde),#145a38);color:#fff;position:relative;overflow:hidden}
+#perso .tit{color:#fff}#perso .tit b{color:#ffb3bf}
+#perso .lead{color:#e3f5ea}
+.persoG{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:24px}
+.form{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:22px;border-radius:22px}
+.form label{display:block;font-weight:800;font-size:13px;margin:12px 0 6px;letter-spacing:.5px}
+.form input,.form select,.form textarea{width:100%;padding:12px 14px;border-radius:12px;border:0;font:600 15px Nunito;background:#fff;color:var(--tinta)}
+.previa{background:#fff;border-radius:24px;padding:26px;color:var(--tinta);text-align:center}
+.matera{width:200px;height:170px;margin:0 auto;border-radius:16px 16px 60px 60px;display:grid;place-items:center;padding:20px;transition:background .3s;box-shadow:inset 0 -14px 0 rgba(0,0,0,.1)}
+.matera span{font-family:'Dancing Script';font-size:30px;line-height:1.05;word-break:break-word}
+.planta{width:150px;height:90px;margin:0 auto -8px;background:radial-gradient(ellipse at 50% 100%,#2fa36b 0 40%,transparent 41%),radial-gradient(ellipse at 25% 80%,#1f7a4d 0 30%,transparent 31%),radial-gradient(ellipse at 75% 80%,#1f7a4d 0 30%,transparent 31%);animation:mece 3s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes mece{50%{transform:rotate(4deg)}}
+/* navidad */
+#navidad{background:#fff7f0}
+.navG{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin-top:20px}
+.navG img{width:100%;border-radius:24px;box-shadow:0 18px 40px rgba(200,16,46,.2)}
+.ideas{display:grid;gap:12px}
+.idea{background:#fff;border-radius:16px;padding:16px 18px;border:2px dashed #f1c4cc}
+.idea h4{font-family:Fredoka;font-size:19px;color:var(--rojo)}
+/* galería */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:24px}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;transition:transform .3s}
+.gal img:hover{transform:scale(1.04)}
+/* contacto */
+#contacto{background:var(--tinta);color:#fff}
+#contacto .tit{color:#9ff0c0}
+.cont{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:24px}
+.cont a,.cont div.c{background:rgba(255,255,255,.07);border-radius:18px;padding:20px;text-decoration:none;display:block;border:1px solid rgba(255,255,255,.12);transition:.2s}
+.cont a:hover{background:rgba(255,255,255,.14)}
+.cont small{opacity:.7;font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:11px}
+.cont b{display:block;font:700 22px Fredoka;margin-top:4px}
+footer{background:#111a14;color:#b9c9bd;padding:26px 0 100px;font-size:13px;text-align:center;line-height:1.7}
+footer a{color:#9ff0c0}
+#lic{display:inline-block;margin-top:6px;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.08)}
+/* carrito */
+#car{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:90;display:none}
+#car.on{display:block}
+#car .pan{position:absolute;right:0;top:0;bottom:0;width:min(420px,100%);background:#fff;padding:22px;overflow:auto;animation:desl .3s}
+@keyframes desl{from{transform:translateX(100%)}}
+.it{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #eee}
+.it .q{display:flex;gap:6px;align-items:center}
+.it .q button{width:30px;height:30px;border-radius:50%;border:2px solid var(--verde);background:#fff;color:var(--verde);font-weight:800;cursor:pointer}
+.flot{position:fixed;right:16px;bottom:16px;z-index:60;background:#25d366;color:#fff;padding:14px 20px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25);animation:late 2.4s infinite}
+@keyframes late{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}60%{box-shadow:0 0 0 14px rgba(37,211,102,0)}}
+.toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:var(--verde);color:#fff;padding:12px 20px;border-radius:999px;font-weight:800;z-index:99;opacity:0;transition:.3s;pointer-events:none}
+.toast.on{opacity:1}
+.rev{opacity:0;transform:translateY(30px);transition:1s}.rev.vis{opacity:1;transform:none}
+@media(max-width:760px){.persoG,.navG{grid-template-columns:1fr}.top nav .hide{display:none}.hero{min-height:80vh}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="logo"><b>Like</b> <span>Plants</span></div>
+  <nav>
+    <a class="btn chico claro hide" href="#catalogo" data-t="nCat">Catálogo</a>
+    <button class="btn chico" id="lang">EN</button>
+    <button class="btn chico rosa" id="carBtn"><span data-t="nPed">Pedido</span><span id="carN">0</span></button>
+  </nav>
+</div></header>
+<div class="hoy"><div id="cinta"></div></div>
+
+<section class="hero">
+  <div class="bg"></div>
+  <div class="in">
+    <span class="chip" data-t="chip">Caucasia · ExpoCaucasia 2026</span>
+    <h1><b>Like</b><br><span>Plants</span></h1>
+    <div class="lema" data-t="lema">Naturaleza que inspira</div>
+    <p class="sub" data-t="sub">Decora, regala y llena de vida tus espacios con materas personalizadas, cactus, plantas de interior y velas aromáticas.</p>
+    <div class="cta">
+      <a class="btn rosa" href="#catalogo" data-t="ver">Ver catálogo</a>
+      <a class="btn claro" id="waHero" href="#" data-t="esc">Escribir por WhatsApp</a>
+    </div>
+    <img class="tarjeta" src="tarjeta-like-plants.jpg" alt="Tarjeta de Like Plants">
+  </div>
+</section>
+
+<section id="hoySec"><div class="wrap">
+  <div class="ant" data-t="hAnt">Hoy en Like Plants</div>
+  <h2 class="tit" id="hoyTit">Hoy</h2>
+  <div class="hoyGrid">
+    <div class="hoyCard"><small data-t="h1s">Planta del día</small><h3 id="pDia"></h3><p id="pDiaTx"></p></div>
+    <div class="hoyCard r"><small data-t="h2s">Faltan para Navidad</small><div class="cuenta" id="cuenta"></div></div>
+    <div class="hoyCard o"><small data-t="h3s">Consejo de cuidado</small><h3 id="tipT"></h3><p id="tipTx"></p></div>
+  </div>
+</div></section>
+
+<section id="catalogo"><div class="wrap">
+  <div class="ant" data-t="cAnt">Catálogo</div>
+  <h2 class="tit" data-t="cTit">Elige lo que <b>te inspira</b></h2>
+  <p class="lead" data-t="cLead">Agrega lo que te guste al pedido y envíalo por WhatsApp. Keiner te confirma precio, disponibilidad y entrega en Caucasia.</p>
+  <div class="cats" id="cats"></div>
+  <div class="prods" id="prods"></div>
+</div></section>
+
+<section id="perso"><div class="wrap">
+  <div class="ant" style="color:#ffb3bf" data-t="pAnt">Materas personalizadas</div>
+  <h2 class="tit" data-t="pTit">Tu matera, <b>con tu mensaje</b></h2>
+  <p class="lead" data-t="pLead">Escribe el nombre o la frase, elige el color y mira cómo quedaría. Ideal para cumpleaños, amor y amistad, grados o Navidad.</p>
+  <div class="persoG">
+    <div class="form">
+      <label data-t="fNom">Nombre o frase</label>
+      <input id="pTexto" maxlength="40" value="Feliz Navidad">
+      <label data-t="fCol">Color de la matera</label>
+      <select id="pColor"></select>
+      <label data-t="fPla">Planta</label>
+      <select id="pPlanta"></select>
+      <label data-t="fNota">Nota para Keiner (fecha, ocasión)</label>
+      <textarea id="pNota" rows="2"></textarea>
+      <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn rosa" id="pAdd" data-t="pAdd">Agregar al pedido</button>
+      </div>
+    </div>
+    <div class="previa">
+      <div class="planta"></div>
+      <div class="matera" id="mat"><span id="matTx"></span></div>
+      <p style="margin-top:14px;font-weight:800;color:var(--verde)" data-t="prev">Vista previa</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="navidad"><div class="wrap">
+  <div class="ant" style="color:var(--rojo)" data-t="nAnt">Temporada navideña</div>
+  <h2 class="tit" style="color:var(--rojo)" data-t="nTit">Regalos que <b style="color:var(--verde)">sí duran</b></h2>
+  <div class="navG">
+    <img src="regalos-like-plants.jpg" alt="Regalos navideños de Like Plants" loading="lazy">
+    <div class="ideas" id="ideas"></div>
+  </div>
+</div></section>
+
+<section id="galeria" style="display:none"><div class="wrap">
+  <div class="ant" data-t="gAnt">Galería</div>
+  <h2 class="tit" data-t="gTit">Así se ve <b>Like Plants</b></h2>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+  <div class="ant" style="color:#ffb3bf" data-t="kAnt">Contacto</div>
+  <h2 class="tit" data-t="kTit">Hablemos de plantas</h2>
+  <div class="cont">
+    <a id="waC" href="#" target="_blank" rel="noopener"><small>WhatsApp</small><b>323 288 8026</b></a>
+    <a href="https://www.instagram.com/likeplants17/" target="_blank" rel="noopener"><small>Instagram</small><b>@likeplants17</b></a>
+    <div class="c"><small data-t="kProp">Propietario</small><b>Keiner Oquendo</b></div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Caucasia%2C+Antioquia" target="_blank" rel="noopener"><small data-t="kDir">Dirección</small><b>Caucasia, Antioquia</b></a>
+  </div>
+</div></section>
+
+<footer>
+  <div>Like Plants · Naturaleza que inspira · Caucasia, Antioquia</div>
+  <div data-t="hecho">App hecha por</div> <a href="https://vibraspositivashm.com" target="_blank" rel="noopener">Vibras Positivas HM</a> · <a href="https://wa.me/573117700431" target="_blank" rel="noopener">311 770 0431</a>
+  <div><span id="lic"></span></div>
+</footer>
+
+<a class="flot" id="waF" href="#" target="_blank" rel="noopener" data-t="fl">Pedir por WhatsApp</a>
+
+<div id="car"><div class="pan">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <h2 class="tit" style="font-size:30px" data-t="tuP">Tu pedido</h2>
+    <button class="btn chico claro" id="carX" data-t="cerrar">Cerrar</button>
+  </div>
+  <div id="items"></div>
+  <div class="form" style="background:var(--menta);border:0;margin-top:14px;color:var(--tinta)">
+    <label data-t="cNom">Tu nombre</label><input id="cNom">
+    <label data-t="cDir">Barrio o dirección de entrega</label><input id="cDir">
+  </div>
+  <button class="btn" style="width:100%;margin-top:14px;background:#25d366" id="enviar" data-t="env">Enviar pedido por WhatsApp</button>
+  <button class="btn claro" style="width:100%;margin-top:8px" id="vaciar" data-t="vac">Vaciar pedido</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const WA="573232888026";
+const LIC_FIN=new Date("2027-05-06T23:59:59-05:00"); // licencia 6 meses desde 6 nov 2026
+let L=localStorage.getItem("lp_lang")||"es";
+const T={
+es:{nCat:"Catálogo",nPed:"Pedido",chip:"Caucasia · ExpoCaucasia 2026",lema:"Naturaleza que inspira",sub:"Decora, regala y llena de vida tus espacios con materas personalizadas, cactus, plantas de interior y velas aromáticas.",ver:"Ver catálogo",esc:"Escribir por WhatsApp",hAnt:"Hoy en Like Plants",h1s:"Planta del día",h2s:"Faltan para Navidad",h3s:"Consejo de cuidado",cAnt:"Catálogo",cTit:"Elige lo que <b>te inspira</b>",cLead:"Agrega lo que te guste al pedido y envíalo por WhatsApp. Keiner te confirma precio, disponibilidad y entrega en Caucasia.",pAnt:"Materas personalizadas",pTit:"Tu matera, <b>con tu mensaje</b>",pLead:"Escribe el nombre o la frase, elige el color y mira cómo quedaría. Ideal para cumpleaños, amor y amistad, grados o Navidad.",fNom:"Nombre o frase",fCol:"Color de la matera",fPla:"Planta",fNota:"Nota para Keiner (fecha, ocasión)",pAdd:"Agregar al pedido",prev:"Vista previa",nAnt:"Temporada navideña",nTit:"Regalos que <b style='color:#1f7a4d'>sí duran</b>",gAnt:"Galería",gTit:"Así se ve <b>Like Plants</b>",kAnt:"Contacto",kTit:"Hablemos de plantas",kProp:"Propietario",kDir:"Dirección",hecho:"App hecha por",fl:"Pedir por WhatsApp",tuP:"Tu pedido",cerrar:"Cerrar",cNom:"Tu nombre",cDir:"Barrio o dirección de entrega",env:"Enviar pedido por WhatsApp",vac:"Vaciar pedido",todos:"Todo",agregar:"Agregar",precio:"Precio por WhatsApp",vacio:"Tu pedido está vacío. Agrega algo del catálogo.",ok:"Agregado al pedido",lic:"Licencia vigente hasta el 6 de mayo de 2027",licV:"Licencia vencida · renueva con Vibras Positivas HM",hoy:"Hoy",dias:"días",horas:"horas",min:"min",hola:"Hola Keiner, vi Like Plants y quiero información.",ped:"Hola Keiner, quiero hacer este pedido en Like Plants:",nombre:"Nombre",entrega:"Entrega",perso:"Matera personalizada"},
+en:{nCat:"Catalog",nPed:"Order",chip:"Caucasia · ExpoCaucasia 2026",lema:"Nature that inspires",sub:"Decorate, gift and fill your spaces with life: custom planters, cacti, indoor plants and scented candles.",ver:"See catalog",esc:"Message on WhatsApp",hAnt:"Today at Like Plants",h1s:"Plant of the day",h2s:"Countdown to Christmas",h3s:"Care tip",cAnt:"Catalog",cTit:"Pick what <b>inspires you</b>",cLead:"Add what you like to your order and send it by WhatsApp. Keiner confirms price, stock and delivery in Caucasia.",pAnt:"Custom planters",pTit:"Your planter, <b>your message</b>",pLead:"Type a name or phrase, choose the color and preview it. Perfect for birthdays, love and friendship, graduations or Christmas.",fNom:"Name or phrase",fCol:"Planter color",fPla:"Plant",fNota:"Note for Keiner (date, occasion)",pAdd:"Add to order",prev:"Preview",nAnt:"Christmas season",nTit:"Gifts that <b style='color:#1f7a4d'>truly last</b>",gAnt:"Gallery",gTit:"This is <b>Like Plants</b>",kAnt:"Contact",kTit:"Let's talk plants",kProp:"Owner",kDir:"Address",hecho:"App made by",fl:"Order on WhatsApp",tuP:"Your order",cerrar:"Close",cNom:"Your name",cDir:"Neighborhood or delivery address",env:"Send order by WhatsApp",vac:"Clear order",todos:"All",agregar:"Add",precio:"Price on WhatsApp",vacio:"Your order is empty. Add something from the catalog.",ok:"Added to order",lic:"License valid until May 6, 2027",licV:"License expired · renew with Vibras Positivas HM",hoy:"Today",dias:"days",horas:"hours",min:"min",hola:"Hi Keiner, I saw Like Plants and I'd like information.",ped:"Hi Keiner, I'd like to place this order at Like Plants:",nombre:"Name",entrega:"Delivery",perso:"Custom planter"}
+};
+const CATS=[{id:"materas",es:"Materas personalizadas",en:"Custom planters"},{id:"cactus",es:"Cactus",en:"Cacti"},{id:"interior",es:"Plantas de interior",en:"Indoor plants"},{id:"velas",es:"Velas aromáticas",en:"Scented candles"},{id:"regalos",es:"Regalos",en:"Gifts"}];
+// Para poner fotos reales: guarda la foto en fotos/ con el nombre de "f" (ej. fotos/matera-nombre.jpg)
+const P=[
+{c:"materas",f:"matera-nombre",et:"Top",es:["Matera con nombre","Matera en cerámica con el nombre o la frase que quieras, con suculenta incluida."],en:["Name planter","Ceramic planter with the name or phrase you want, succulent included."]},
+{c:"materas",f:"matera-pareja",es:["Materas de pareja","Dos materas que combinan, para regalar en amor y amistad o aniversario."],en:["Couple planters","Two matching planters for anniversaries and love and friendship day."]},
+{c:"materas",f:"matera-navidad",et:"Navidad",es:["Matera navideña","Diseño de temporada con planta y moño, lista para regalar."],en:["Christmas planter","Seasonal design with plant and bow, ready to gift."]},
+{c:"cactus",f:"cactus-mini",es:["Cactus mini","Pequeño, resistente y casi sin cuidados. Perfecto para escritorio."],en:["Mini cactus","Small, tough and almost care-free. Perfect for a desk."]},
+{c:"cactus",f:"cactus-flor",et:"Con flor",es:["Cactus con flor","Cactus en matera decorada que florece y alegra cualquier rincón."],en:["Flowering cactus","Cactus in a decorated pot that blooms and brightens any corner."]},
+{c:"cactus",f:"suculentas-kit",es:["Kit de suculentas","Varias suculentas en arreglo, ideal para mesas y oficinas."],en:["Succulent set","Several succulents in one arrangement, great for tables and offices."]},
+{c:"interior",f:"interior-pequena",es:["Planta de interior pequeña","Verde para la sala, la cocina o el cuarto, con matera."],en:["Small indoor plant","Green for the living room, kitchen or bedroom, with pot."]},
+{c:"interior",f:"interior-grande",es:["Planta de interior grande","Para darle vida a espacios amplios, locales y recepciones."],en:["Large indoor plant","To bring life to big spaces, shops and receptions."]},
+{c:"velas",f:"vela-aromatica",es:["Vela aromática","Vela en vaso decorado con aroma relajante. Pregunta por los aromas."],en:["Scented candle","Candle in a decorated jar with a relaxing scent. Ask about scents."]},
+{c:"velas",f:"vela-personalizada",es:["Vela personalizada","Con nombre o mensaje, para detalles y eventos."],en:["Custom candle","With a name or message, for gifts and events."]},
+{c:"regalos",f:"combo-regalo",et:"Combo",es:["Combo planta + vela","Matera con planta y vela aromática en caja de regalo."],en:["Plant + candle combo","Planter with plant and scented candle in a gift box."]},
+{c:"regalos",f:"regalos-empresa",es:["Detalles para empresas","Regalos de fin de año para clientes y empleados, por cantidad."],en:["Corporate gifts","Year-end gifts for clients and staff, in bulk."]}
+];
+const DIA=[["Suculenta","Pide poca agua y mucha luz: la reina de los regalos.","Succulent","Little water, lots of light: the queen of gifts."],["Cactus","Aguanta el calor de Caucasia como nadie.","Cactus","Handles the Caucasia heat like no other."],["Potus","Planta de interior que crece rápido y purifica el aire.","Pothos","Fast-growing indoor plant that purifies the air."],["Lengua de suegra","Casi indestructible, perfecta para principiantes.","Snake plant","Almost indestructible, perfect for beginners."],["Zamioculca","Brilla en rincones con poca luz.","ZZ plant","Shines in low-light corners."],["Echeveria","Forma de rosa y colores que enamoran.","Echeveria","Rose-shaped with lovely colors."],["Aloe vera","Bonita y útil en la casa.","Aloe vera","Pretty and useful at home."]];
+const TIPS=[["Riego","A los cactus y suculentas, agua solo cuando la tierra esté seca.","Watering","Water cacti and succulents only when the soil is dry."],["Luz","Las plantas de interior quieren luz, pero no sol directo de mediodía.","Light","Indoor plants want light, but not direct midday sun."],["Drenaje","Que la matera tenga salida de agua: el encharque las daña.","Drainage","Make sure the pot drains: standing water harms roots."],["Velas","Corta la mecha a medio centímetro antes de encender.","Candles","Trim the wick to half a centimeter before lighting."],["Calor","En Caucasia, riega temprano en la mañana o al final de la tarde.","Heat","In Caucasia, water early morning or late afternoon."]];
+const IDEAS=[["Para mamá y la abuela","Matera con su nombre y una planta que florezca.","For mom and grandma","Planter with her name and a flowering plant."],["Para el amigo secreto","Cactus mini o vela aromática: lindo y a buen precio.","Secret Santa","Mini cactus or scented candle: lovely and affordable."],["Para la oficina","Kit de suculentas para el escritorio.","For the office","Succulent set for the desk."],["Para clientes de tu negocio","Detalles por cantidad con el nombre de tu empresa.","For your clients","Bulk gifts with your company name."]];
+const COLORES=[["#ffffff","Blanco","White"],["#f6c9d0","Rosado","Pink"],["#cfe9d6","Verde menta","Mint"],["#f3e1b6","Arena","Sand"],["#c8102e","Rojo navidad","Christmas red"],["#1f7a4d","Verde","Green"]];
+const PLANTAS=[["Suculenta","Succulent"],["Cactus","Cactus"],["Planta de interior","Indoor plant"]];
+let car=JSON.parse(localStorage.getItem("lp_car")||"[]"),catOn="todos";
+const $=s=>document.querySelector(s);
+const bog=()=>new Date(new Date().toLocaleString("en-US",{timeZone:"America/Bogota"}));
+const t=k=>T[L][k];
+function wa(msg){return "https://wa.me/"+WA+"?text="+encodeURIComponent(msg)}
+function toast(m){const e=$("#toast");e.textContent=m;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1600)}
+function guarda(){localStorage.setItem("lp_car",JSON.stringify(car));$("#carN").textContent=car.reduce((a,b)=>a+b.q,0)}
+function foto(f){return "fotos/"+f+".jpg"}
+function pinta(){
+ document.documentElement.lang=L;$("#lang").textContent=L=="es"?"EN":"ES";
+ document.querySelectorAll("[data-t]").forEach(e=>e.innerHTML=t(e.dataset.t));
+ ["#waHero","#waF","#waC"].forEach(s=>$(s).href=wa(t("hola")));
+ // cinta
+ const c=(L=="es"?["Materas personalizadas","Cactus","Plantas de interior","Velas aromáticas","Regalos de Navidad","Entregas en Caucasia","Pide por WhatsApp 323 288 8026","@likeplants17"]:["Custom planters","Cacti","Indoor plants","Scented candles","Christmas gifts","Delivery in Caucasia","Order on WhatsApp 323 288 8026","@likeplants17"]).join("   ·   ");
+ $("#cinta").textContent=(c+"   ·   ").repeat(4);
+ // cats
+ $("#cats").innerHTML=[{id:"todos",es:t("todos"),en:t("todos")},...CATS].map(x=>`<button class="cat ${x.id==catOn?"on":""}" data-c="${x.id}">${x[L]}</button>`).join("");
+ document.querySelectorAll(".cat").forEach(b=>b.onclick=()=>{catOn=b.dataset.c;pinta()});
+ prods();hoy();ideas();perso();lic();
+}
+function prods(){
+ const lst=P.map((p,i)=>({...p,i})).filter(p=>catOn=="todos"||p.c==catOn);
+ $("#prods").innerHTML=lst.map((p,k)=>`<div class="prod" style="animation-delay:${k*.05}s">
+  <div class="ft" style="background-image:url(${foto(p.f)})"><div class="fb" data-img="${foto(p.f)}">${p[L][0]}</div>${p.et?`<span class="et">${p.et}</span>`:""}</div>
+  <div class="tx"><h3>${p[L][0]}</h3><p>${p[L][1]}</p><div class="pr">${t("precio")}</div>
+  <button class="btn" data-i="${p.i}">${t("agregar")}</button></div></div>`).join("");
+ // si la foto existe, quita el fondo de respaldo
+ document.querySelectorAll(".fb").forEach(fb=>{const im=new Image();im.onload=()=>fb.remove();im.src=fb.dataset.img});
+ document.querySelectorAll(".prod .btn").forEach(b=>b.onclick=()=>{add(P[b.dataset.i][L][0])});
+}
+function add(n){const x=car.find(c=>c.n==n);x?x.q++:car.push({n,q:1});guarda();toast(t("ok"))}
+function hoy(){
+ const d=bog(),i=Math.floor(d/864e5);
+ const f=d.toLocaleDateString(L=="es"?"es-CO":"en-US",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+ $("#hoyTit").textContent=t("hoy")+": "+f;
+ const p=DIA[i%DIA.length],tp=TIPS[i%TIPS.length],o=L=="es"?0:2;
+ $("#pDia").textContent=p[o];$("#pDiaTx").textContent=p[o+1];$("#tipT").textContent=tp[o];$("#tipTx").textContent=tp[o+1];
+ cuenta();
+}
+function cuenta(){
+ const n=bog();let x=new Date(n.getFullYear(),11,24,19,0,0);if(n>x)x=new Date(n.getFullYear()+1,11,24,19);
+ const s=(x-n)/1000;
+ $("#cuenta").innerHTML=`<div><b>${Math.floor(s/86400)}</b><span>${t("dias")}</span></div><div><b>${Math.floor(s%86400/3600)}</b><span>${t("horas")}</span></div><div><b>${Math.floor(s%3600/60)}</b><span>${t("min")}</span></div>`;
+}
+function ideas(){const o=L=="es"?0:2;$("#ideas").innerHTML=IDEAS.map(x=>`<div class="idea rev vis"><h4>${x[o]}</h4><p>${x[o+1]}</p></div>`).join("")+`<a class="btn rosa" href="${wa(L=="es"?"Hola Keiner, quiero cotizar regalos de Navidad en Like Plants.":"Hi Keiner, I'd like a quote for Christmas gifts at Like Plants.")}" target="_blank" rel="noopener">${L=="es"?"Cotizar regalos de Navidad":"Get a Christmas gift quote"}</a>`}
+function perso(){
+ const o=L=="es"?1:2,cs=$("#pColor").value,ps=$("#pPlanta").selectedIndex;
+ $("#pColor").innerHTML=COLORES.map(c=>`<option value="${c[0]}">${c[o]}</option>`).join("");if(cs)$("#pColor").value=cs;
+ $("#pPlanta").innerHTML=PLANTAS.map(p=>`<option>${p[L=="es"?0:1]}</option>`).join("");if(ps>0)$("#pPlanta").selectedIndex=ps;
+ prev();
+}
+function prev(){const c=$("#pColor").value||"#ffffff",osc=["#c8102e","#1f7a4d"].includes(c);$("#mat").style.background=c;$("#matTx").style.color=osc?"#fff":"#1f7a4d";$("#matTx").textContent=$("#pTexto").value||"Like Plants"}
+$("#pTexto").oninput=prev;$("#pColor").onchange=prev;
+$("#pAdd").onclick=()=>{const col=$("#pColor").selectedOptions[0].text;add(`${t("perso")}: "${$("#pTexto").value}" · ${col} · ${$("#pPlanta").value}${$("#pNota").value?" · "+$("#pNota").value:""}`)};
+function lic(){const v=bog()<=LIC_FIN;$("#lic").textContent=v?t("lic"):t("licV");$("#lic").style.background=v?"":"#c8102e"}
+function verCar(){
+ $("#items").innerHTML=car.length?car.map((c,i)=>`<div class="it"><div>${c.n}</div><div class="q"><button data-m="${i}">-</button><b>${c.q}</b><button data-p="${i}">+</button></div></div>`).join(""):`<p style="padding:18px 0;color:#666">${t("vacio")}</p>`;
+ document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{const c=car[b.dataset.m];c.q--;if(!c.q)car.splice(b.dataset.m,1);guarda();verCar()});
+ document.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{car[b.dataset.p].q++;guarda();verCar()});
+}
+$("#carBtn").onclick=()=>{verCar();$("#car").classList.add("on")};
+$("#carX").onclick=()=>$("#car").classList.remove("on");
+$("#car").onclick=e=>{if(e.target.id=="car")$("#car").classList.remove("on")};
+$("#vaciar").onclick=()=>{car=[];guarda();verCar()};
+$("#enviar").onclick=()=>{if(!car.length){toast(t("vacio"));return}
+ let m=t("ped")+"\n\n"+car.map(c=>`- ${c.q} x ${c.n}`).join("\n");
+ if($("#cNom").value)m+=`\n\n${t("nombre")}: ${$("#cNom").value}`;if($("#cDir").value)m+=`\n${t("entrega")}: ${$("#cDir").value}`;
+ window.open(wa(m),"_blank")};
+$("#lang").onclick=()=>{L=L=="es"?"en":"es";localStorage.setItem("lp_lang",L);pinta()};
+// galería: muestra fotos/1.jpg ... fotos/12.jpg si existen
+(function(){const g=$("#gal");for(let i=1;i<=12;i++){const im=new Image();im.loading="lazy";im.alt="Like Plants";im.onload=()=>{g.appendChild(im);$("#galeria").style.display=""};im.src="fotos/"+i+".jpg"}})();
+pinta();guarda();setInterval(cuenta,30000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)hoy()});
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>
